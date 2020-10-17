@@ -417,7 +417,7 @@ void term_init(void)
 #endif
 
     signal(SIGINT , sigterm_handler); /* Interrupt (ANSI).    */
-    signal(SIGTERM, sigterm_handler); /* Termination (ANSI).  */
+    //signal(SIGTERM, sigterm_handler); /* Termination (ANSI).  */
 #ifdef SIGXCPU
     signal(SIGXCPU, sigterm_handler);
 #endif
